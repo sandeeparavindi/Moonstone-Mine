@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1444.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="900.0" fitWidth="750.0">
+         <image>
+            <Image url="@../icon/14.jpeg" />
+         </image>
+         <effect>
+            <Blend />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="126.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/6-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="700.0" prefHeight="900.0" prefWidth="750.0" style="-fx-background-color: D0D4CA;">
+         <children>
+            <BorderPane layoutX="176.0" layoutY="202.0" prefHeight="474.0" prefWidth="397.0" style="-fx-background-color: E0F4FF; -fx-background-radius: 50px;" />
+            <Text fill="#164863" layoutX="226.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER LOGIN">
+               <font>
+                  <Font name="Times New Roman Bold" size="27.0" />
+               </font>
+            </Text>
+            <Text fill="#164863" layoutX="226.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#164863" layoutX="224.0" layoutY="435.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Times New Roman Bold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtUserName" layoutX="224.0" layoutY="359.0" prefHeight="33.0" prefWidth="298.0" promptText="Enter user name">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="txtPassword" layoutX="224.0" layoutY="450.0" prefHeight="33.0" prefWidth="298.0" promptText="Enter password">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <JFXButton buttonType="RAISED" layoutX="224.0" layoutY="526.0" onAction="#btnLoginOnAction" prefHeight="26.0" prefWidth="298.0" style="-fx-background-color: D0D4CA; -fx-background-radius: 20px;" text="LogIn" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="226.0" layoutY="594.0" onAction="#btnSignUpOnAction" prefHeight="26.0" prefWidth="298.0" style="-fx-background-color: D0D4CA; -fx-background-radius: 20px;" text="SignUp" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="359.0" layoutY="567.0" text="or" textFill="#164863">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Text layoutX="52.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO THE MOONSTONE MINE...">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

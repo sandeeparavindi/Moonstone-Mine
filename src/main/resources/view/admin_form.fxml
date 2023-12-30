@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1444.0" style="-fx-background-color: #164863;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.AdminFormController">
+   <children>
+      <AnchorPane layoutX="42.0" layoutY="43.0" prefHeight="790.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#164863" layoutX="39.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overview">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Text>
+            <JFXButton layoutX="18.0" layoutY="211.0" onAction="#btnCustomerOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Customer" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="253.0" onAction="#btnItemOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Item" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="295.0" onAction="#btnPlaceOrderOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Place Order" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="336.0" onAction="#btnEmployeeOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Employee" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="419.0" onAction="#btnBookingOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Booking" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="461.0" onAction="#btnDailyReportOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Daily Sale Report " textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="628.0" onAction="#btnLogoutOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Logout" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="378.0" onAction="#btnTicketOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Ticket" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="503.0" onAction="#btnMonthlyReportOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Monthly Sale Report " textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="-7.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/6-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="18.0" layoutY="170.0" onAction="#btnHomeOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Home" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="18.0" layoutY="586.0" onAction="#btnBarChartOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Bar Chart Sales" textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="19.0" layoutY="544.0" onAction="#btnMonthlyTourIncomeOnAction" prefHeight="34.0" prefWidth="207.0" style="-fx-background-color: DDF2FD; -fx-background-radius: 20;" text="Monthly Tour Income " textFill="#164863">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children></AnchorPane>
+      <AnchorPane fx:id="pane" layoutX="268.0" layoutY="43.0" prefHeight="790.0" prefWidth="1122.0">
+         <children>
+            <ImageView fitHeight="790.0" fitWidth="1122.0">
+               <image>
+                  <Image url="@../icon/5.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane prefHeight="790.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" />
+            <Label layoutX="89.0" layoutY="35.0" text="Dashboard Overview" textFill="#164863">
+               <font>
+                  <Font name="Segoe UI Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="89.0" layoutY="84.0" prefHeight="155.0" prefWidth="172.0" style="-fx-background-color: #97FFB2; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Total Customers">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtCustomerCount" layoutX="14.0" layoutY="113.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="278.0" layoutY="84.0" prefHeight="155.0" prefWidth="172.0" style="-fx-background-color: #FFFC4A; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Total Employee">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtEmployeeCount" layoutX="14.0" layoutY="113.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="467.0" layoutY="84.0" prefHeight="155.0" prefWidth="172.0" style="-fx-background-color: #FF9DF2; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Item type">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtIemCount" layoutX="14.0" layoutY="113.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="655.0" layoutY="84.0" prefHeight="155.0" prefWidth="172.0" style="-fx-background-color: #FFA186; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Total Users">
+                     <font>
+                        <Font name="Segoe UI" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="txtUserCount" layoutX="14.0" layoutY="113.0">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="dashboardAnchorPane" layoutX="87.0" layoutY="260.0" prefHeight="305.0" prefWidth="674.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="10.0" layoutY="15.0" text="Customer Base Growth" textFill="#164863">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="238.0" fitWidth="357.0" layoutX="30.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/g.jpeg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton buttonType="RAISED" layoutX="418.0" layoutY="49.0" onAction="#btnClickOnAction" prefHeight="217.0" prefWidth="230.0" style="-fx-background-color: #E2FCFF;" text="Click Here " textFill="#164863">
+                     <font>
+                        <Font name="Times New Roman" size="16.0" />
+                     </font>
+                  </JFXButton>
+               </children></AnchorPane>
+            <AnchorPane layoutX="286.0" layoutY="587.0" prefHeight="179.0" prefWidth="799.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <children>
+                  <Label fx:id="lblDate" layoutX="14.0" layoutY="14.0" prefHeight="155.0" prefWidth="490.0" textFill="#164863">
+                     <font>
+                        <Font name="Segoe UI Bold" size="60.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTime" layoutX="432.0" layoutY="60.0" prefHeight="64.0" prefWidth="257.0" textFill="#36b3bf">
+                     <font>
+                        <Font name="System Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="139.0" fitWidth="186.0" layoutX="609.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/t.jpeg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+            <AnchorPane layoutX="780.0" layoutY="311.0" prefHeight="263.0" prefWidth="304.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Sales Mapping by Country" textFill="#164863">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="179.0" fitWidth="207.0" layoutX="50.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/c.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="843.0" layoutY="84.0" prefHeight="216.0" prefWidth="218.0" style="-fx-background-color: #ffffff; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" text="Target Vs Reality" textFill="#164863">
+                     <font>
+                        <Font name="Segoe UI Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="229.0" fitWidth="229.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/s.jpeg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="155.0" fitWidth="172.0" layoutX="96.0" layoutY="599.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/gems-blue.gif" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

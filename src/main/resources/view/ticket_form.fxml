@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.TicketFormController">
+    <children>
+        <ImageView fitHeight="790.0" fitWidth="1121.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../icon/3.jpeg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="790.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" />
+        <AnchorPane layoutX="71.0" layoutY="95.0" opacity="0.65" prefHeight="200.0" prefWidth="945.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" />
+        <Label layoutX="82.0" layoutY="49.0" text="TICKET MANAGE FORM" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="82.0" layoutY="150.0" text="Ticket_code" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtCode" layoutX="218.0" layoutY="144.0" onAction="#txtSerachOnAction" prefHeight="31.0" prefWidth="236.0" />
+        <Label layoutX="82.0" layoutY="217.0" text="Price" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="597.0" layoutY="150.0" text="Type" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="602.0" layoutY="217.0" text="Qty On Hand" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtPrice" layoutX="218.0" layoutY="211.0" prefHeight="31.0" prefWidth="236.0" />
+        <TextField fx:id="txtType" layoutX="716.0" layoutY="144.0" prefHeight="31.0" prefWidth="236.0" />
+        <TextField fx:id="txtQtyOnHand" layoutX="716.0" layoutY="211.0" prefHeight="31.0" prefWidth="236.0" />
+        <JFXButton buttonType="RAISED" layoutX="369.0" layoutY="344.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #5EFF2F;" text="Add" textFill="#164863">
+            <font>
+                <Font name="Segoe UI" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="561.0" layoutY="344.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #FBFF00;" text="Update" textFill="#164863">
+            <font>
+                <Font name="Segoe UI" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <JFXButton buttonType="RAISED" layoutX="739.0" layoutY="344.0" onAction="#btnClearOnAction" prefHeight="38.0" prefWidth="94.0" style="-fx-background-color: #E74EFF;" text="Clear" textFill="#164863">
+            <font>
+                <Font name="Segoe UI" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+      <TableView fx:id="tblTicket" layoutX="219.0" layoutY="409.0" opacity="0.75" prefHeight="345.0" prefWidth="747.0">
+         <columns>
+            <TableColumn fx:id="colCode" prefWidth="110.39999389648438" text="Code" />
+            <TableColumn fx:id="colType" prefWidth="193.6000518798828" text="Type" />
+            <TableColumn fx:id="colPrice" prefWidth="127.199951171875" text="Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="136.79998779296875" text="Qty On Hand" />
+            <TableColumn fx:id="colAction" prefWidth="177.5999633789063" text="Action" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>

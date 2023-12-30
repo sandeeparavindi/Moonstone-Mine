@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="monthlyIncomeReportContext" prefHeight="790.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.MonthlyIncomeFormController">
+    <children>
+        <ImageView fitHeight="790.0" fitWidth="1122.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../icon/12.jpeg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="790.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" />
+        <Label layoutX="97.0" layoutY="39.0" text="MONTHLY INCOME MANAGE FORM" textFill="#164863">
+            <font>
+                <Font name="Segoe UI Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblReport" layoutX="183.0" layoutY="128.0" opacity="0.75" prefHeight="571.0" prefWidth="793.0">
+            <columns>
+                <TableColumn fx:id="colMonth" prefWidth="187.199951171875" text="Monthly" />
+                <TableColumn fx:id="colOrderCount" prefWidth="167.19998168945312" text="Order Count" />
+                <TableColumn fx:id="colItemSoldQty" prefWidth="224.0" text="Sold Item" />
+                <TableColumn fx:id="colCost" prefWidth="216.00006103515625" text="Cost" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

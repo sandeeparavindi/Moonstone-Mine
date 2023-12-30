@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="790.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.ItemFormController">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1122.0">
+         <image>
+            <Image url="@../icon/2.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="790.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" />
+      <AnchorPane layoutX="71.0" layoutY="89.0" opacity="0.65" prefHeight="200.0" prefWidth="798.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;" />
+      <Label layoutX="93.0" layoutY="43.0" text="ITEM MANAGE FORM" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="93.0" layoutY="104.0" text="Item Code" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCode" layoutX="96.0" layoutY="132.0" onAction="#codeSerachOnAction" prefHeight="38.0" prefWidth="282.0" />
+      <Label layoutX="549.0" layoutY="104.0" text="Description" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtDescription" layoutX="549.0" layoutY="132.0" prefHeight="38.0" prefWidth="282.0" />
+      <Label layoutX="93.0" layoutY="192.0" text="Unit Price" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUnitPrice" layoutX="93.0" layoutY="218.0" prefHeight="38.0" prefWidth="282.0" />
+      <Label layoutX="549.0" layoutY="192.0" text="Qty On Hand" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQtyOnHand" layoutX="549.0" layoutY="218.0" prefHeight="38.0" prefWidth="282.0" />
+      <JFXButton buttonType="RAISED" layoutX="935.0" layoutY="132.0" onAction="#btnAddOnAction" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #5EFF2F;" text="Add" textFill="#164863">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="935.0" layoutY="211.0" onAction="#btnUpdateOnAction" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #FBFF00;" text="Update" textFill="#164863">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="935.0" layoutY="289.0" onAction="#btnClearOnAction" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #E74EFF;" text="Clear" textFill="#164863">
+         <font>
+            <Font name="Segoe UI" size="14.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblItem" layoutX="151.0" layoutY="337.0" opacity="0.75" prefHeight="391.0" prefWidth="747.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="110.39999389648438" text="Code" />
+          <TableColumn fx:id="colDescription" prefWidth="193.6000518798828" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="127.199951171875" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="136.79998779296875" text="Qty On Hand" />
+            <TableColumn fx:id="colAction" prefWidth="177.5999633789063" text="Action" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

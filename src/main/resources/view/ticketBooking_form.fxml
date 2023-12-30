@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="790.0" prefWidth="1122.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MoonstoneMine.controller.TicketBookingFormController">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1122.0" layoutX="254.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../icon/11.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="90.0" layoutY="88.0" opacity="0.65" prefHeight="238.0" prefWidth="997.0" style="-fx-background-color: #ffffff; -fx-background-radius: 20;">
+         <children>
+            <Label fx:id="lblOrderId" layoutX="105.0" layoutY="22.0" />
+            <Label fx:id="lblOrderDate" layoutX="698.0" layoutY="22.0" />
+            <Label fx:id="lblCustomerName" layoutX="740.0" layoutY="59.0" />
+            <Label fx:id="lblDescription" layoutX="124.0" layoutY="175.0" />
+            <Label fx:id="lblUnitPrice" layoutX="419.0" layoutY="175.0" />
+            <Label fx:id="lblQtyOnHand" layoutX="733.0" layoutY="175.0" />
+            <Label fx:id="lblBookingDate" layoutX="699.0" layoutY="18.0" />
+            <Label fx:id="lblType" layoutX="70.0" layoutY="184.0" />
+            <Label fx:id="lblPrice" layoutX="380.0" layoutY="184.0" />
+            <Label fx:id="lblQtyOnHand" layoutX="726.0" layoutY="184.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="790.0" prefWidth="60.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="98.0" layoutY="46.0" text="TICKET BOOKING MANAGE FORM" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="106.0" text="Booking Id : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblBookingId" layoutX="209.0" layoutY="107.0" />
+      <Label layoutX="668.0" layoutY="106.0" text="Booking Date : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="148.0" text="Customer Id : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbCustomerId" layoutX="221.0" layoutY="145.0" onAction="#cmbCustomerOnAction" prefHeight="26.0" prefWidth="190.0" />
+      <JFXButton buttonType="RAISED" layoutX="456.0" layoutY="145.0" onAction="#btnNewCustomerOnAction" prefHeight="21.0" prefWidth="74.0" style="-fx-background-color: #2ecc71;" text="NEW" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="667.0" layoutY="148.0" text="Customer Name : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCustomerName" layoutX="805.0" layoutY="150.0" />
+      <Label layoutX="105.0" layoutY="223.0" text="Ticket Code : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cmbItemCode" layoutX="206.0" layoutY="219.0" onAction="#cmbItemOnAction" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="107.0" layoutY="272.0" text="Type : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="416.0" layoutY="272.0" text="Price : " textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="697.0" layoutY="272.0" text="Qty. On Hand:" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="949.0" layoutY="263.0" text="Qty:" textFill="#164863">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtQty" layoutX="949.0" layoutY="288.0" onAction="#txtQtyOnAction" prefHeight="33.0" prefWidth="66.0" />
+      <TableView fx:id="tblBookingCart" layoutX="151.0" layoutY="364.0" opacity="0.75" prefHeight="322.0" prefWidth="801.0">
+         <columns>
+            <TableColumn fx:id="colTicketCode" prefWidth="96.800048828125" text="Code" />
+            <TableColumn fx:id="colType" prefWidth="152.79998779296875" text="Type" />
+            <TableColumn fx:id="colQty" prefWidth="100.7999267578125" text="Qty" />
+            <TableColumn fx:id="colPrice" prefWidth="172.79998779296875" text="Price" />
+            <TableColumn fx:id="colTotal" prefWidth="140.79998779296875" text="Total" />
+            <TableColumn fx:id="colAction" prefWidth="136.00002441406252" text="Action" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="979.0" layoutY="357.0" onAction="#btnAddToCartOnAction" prefHeight="33.0" prefWidth="120.0" style="-fx-background-color: #3498db;" text="Add to cart" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="980.0" layoutY="715.0" onAction="#btnPlaceBookingOnAction" prefHeight="34.0" prefWidth="120.0" style="-fx-background-color: #34495e;" text="Place Booking" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="111.0" layoutY="722.0" text="Net Total:" textFill="#164863">
+         <font>
+            <Font name="Segoe UI Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNetTotal" layoutX="195.0" layoutY="724.0" />
+   </children>
+</AnchorPane>
